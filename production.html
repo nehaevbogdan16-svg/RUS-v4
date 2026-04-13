@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Производство — РУС</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo-wrap">
+                <img src="assets/logo.png" class="logo">
+                <span class="logo-text">РУС</span>
+            </a>
+
+            <div class="burger" onclick="toggleMenu()">☰</div>
+
+            <nav id="menu">
+                <a href="about.html">О компании</a>
+                <a href="services.html">Решения</a>
+                <a href="projects.html">Проекты</a>
+                <a href="production.html">Производство</a>
+                <a href="contact.html">Контакты</a>
+            </nav>
+
+            <a href="contact.html" class="btn">Заявка</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="tag">СОБСТВЕННОЕ ПРОИЗВОДСТВО</div>
+            <h1>Производственная база</h1>
+            <p>Изготовление оборудования для систем водоочистки</p>
+        </div>
+    </section>
+
+    <section class="section dark">
+        <div class="container split">
+
+            <div>
+                <h2>Контроль качества</h2>
+                <p>Каждый этап производства проходит инженерную проверку и тестирование</p>
+            </div>
+
+            <img src="assets/factory.jpg">
+
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div>
+            <h4>РУСВОДО</h4>
+            <p>Инженерные системы водоочистки и водоподготовки</p>
+        </div>
+
+        <div>
+            <h4>Разделы</h4>
+            <a href="about.html">О компании</a><br>
+            <a href="services.html">Решения</a><br>
+            <a href="projects.html">Проекты</a><br>
+            <a href="contact.html">Контакты</a>
+        </div>
+
+        <div>
+            <h4>Контакты</h4>
+            <p>Тел: +7 (000) 000-00-00</p>
+            <p>Email: info@rusvodo.ru</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 РУСВОДО. Все права защищены
+    </div>
+</footer>
