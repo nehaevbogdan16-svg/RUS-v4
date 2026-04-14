@@ -476,3 +476,57 @@ textarea {
   }
 
 }
+/* ===== UX ПРОКАЧКА ФОРМЫ ===== */
+
+/* плавность */
+input, textarea, select {
+  transition: all 0.2s ease;
+}
+
+/* обычное состояние */
+input, textarea, select {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+  background: #fff;
+}
+
+/* фокус (клик) */
+input:focus, textarea:focus, select:focus {
+  border-color: #1EA1FB;
+  box-shadow: 0 0 0 3px rgba(30, 161, 251, 0.15);
+  outline: none;
+}
+
+/* hover (наведение) */
+input:hover, textarea:hover, select:hover {
+  border-color: #525DFB;
+}
+
+/* textarea чуть приятнее */
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* кнопка */
+.btn {
+  transition: all 0.2s ease;
+}
+
+/* hover кнопки */
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* нажатие */
+.btn:active {
+  transform: translateY(0);
+  opacity: 0.9;
+}
+
+/* disabled (на будущее) */
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
