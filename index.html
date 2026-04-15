@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РУС — Инженерные системы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo-wrap">
+                <img src="assets/logo.png" class="logo">
+                <span class="logo-text">РУС</span>
+            </a>
+
+            <div class="burger" onclick="toggleMenu()">☰</div>
+
+            <nav id="menu">
+                <a href="about.html">О компании</a>
+                <a href="services.html">Решения</a>
+                <a href="projects.html">Проекты</a>
+                <a href="production.html">Производство</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <a href="contact.html" class="btn">Заявка</a>
+        </div>
+    </header>
+
+    <section class="section hero">
+        <div class="container hero-grid">
+
+            <div>
+
+                <!-- мини-бейдж -->
+                <div class="badge">Инженерные решения для водоочистки</div>
+
+                <h1>Очистка и подготовка воды под ключ</h1>
+
+                <p class="muted" style="margin-top:15px;">
+                    Проектируем, производим и внедряем системы водоочистки для промышленных и коммерческих объектов
+                </p>
+
+                <!-- кнопки -->
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn">Получить расчёт</a>
+                    <a href="projects.html" class="btn btn-outline">Смотреть проекты</a>
+                </div>
+
+                <!-- преимущества -->
+                <div class="hero-features">
+                    <span>Собственное производство</span>
+                    <span>Сложные объекты</span>
+                    <span>Работаем по всей России</span>
+                </div>
+
+            </div>
+
+            <!-- правая карточка -->
+
+            <div class="hero-slider">
+
+                <img src="S1/hero1.jpg" class="slide active">
+                <img src="S1/hero2.jpg" class="slide">
+                <img src="S1/hero3.jpg" class="slide">
+
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+
+            <div class="grid-3">
+
+                <div class="card">
+                    <h3>10+ лет</h3>
+                    <p class="muted">Опыт в водоочистке</p>
+                </div>
+
+                <div class="card">
+                    <h3>100+ проектов</h3>
+                    <p class="muted">Реализовано по России</p>
+                </div>
+
+                <div class="card">
+                    <h3>Своё производство</h3>
+                    <p class="muted">Контроль качества на всех этапах</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="section">
+        <div class="container grid-3">
+
+            <div class="card">
+                <h3>Очистка сточных вод</h3>
+                <p>Промышленные системы полного цикла</p>
+            </div>
+
+            <div class="card">
+                <h3>Водоподготовка</h3>
+                <p>Для предприятий и заводов</p>
+            </div>
+
+            <div class="card">
+                <h3>Химические решения</h3>
+                <p>Подбор реагентов под объект</p>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+    <section class="section">
+        <div class="container">
+
+            <div class="card" style="text-align:center; padding:40px;">
+                <h2>Нужна система водоочистки?</h2>
+                <p class="muted">Оставьте заявку — рассчитаем решение под ваш объект</p>
+
+                <a href="contact.html" class="btn" style="margin-top:20px;">
+                    Оставить заявку
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        let slides = document.querySelectorAll('.slide');
+        let index = 0;
+
+        setInterval(() => {
+            slides[index].classList.remove('active');
+            index = (index + 1) % slides.length;
+            slides[index].classList.add('active');
+        }, 4000);
+    </script>
+</body>
+</html>
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div>
+            <h4>ООО РУС</h4>
+            <p>Инженерные системы водоочистки и водоподготовки</p>
+        </div>
+
+        <div>
+            <h4>Разделы</h4>
+            <a href="about.html">О компании</a><br>
+            
+            <a href="contact.html">Контакты</a>
+        </div>
+
+        <div>
+            <h4>Контакты</h4>
+            <p>Тел: +7 (000) 000-00-00</p>
+            <p>Email: info@rusvodo.ru</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 ООО РУС. Все права защищены
+    </div>
+</footer>

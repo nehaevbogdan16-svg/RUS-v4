@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решения — РУС</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo-wrap">
+                <img src="assets/logo.png" class="logo">
+                <span class="logo-text">РУС</span>
+            </a>
+
+            <div class="burger" onclick="toggleMenu()">☰</div>
+
+            <nav id="menu">
+                <a href="about.html">О компании</a>
+                <a href="services.html">Решения</a>
+                <a href="projects.html">Проекты</a>
+                <a href="production.html">Производство</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <a href="contact.html" class="btn">Заявка</a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="section">
+        <div class="container">
+
+            <div style="max-width:600px;">
+                <h1>Решения в области водоочистки</h1>
+                <p class="muted">Комплексный подход — от анализа до внедрения и обслуживания</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="section">
+        <div class="container">
+
+            <div class="grid-3">
+
+                <div class="card service-card" onclick="toggleService(this)">
+                    
+                    <h3>Проектирование</h3>
+                    <p class="muted">Разработка решений под конкретный объект</p>
+                    <div class="service-more">
+                        <p>✔ Анализ воды</p>
+                        <p>✔ Подбор технологии</p>
+                        <p>✔ Расчёт системы</p>
+                    </div>
+                </div>
+
+                <div class="card service-card" onclick="toggleService(this)">
+                    
+                    <h3>Производство</h3>
+                    <p class="muted">Собственное изготовление оборудования</p>
+                    <div class="service-more">
+                        <p>✔ Металлоконструкции</p>
+                        <p>✔ Сборка систем</p>
+                        <p>✔ Контроль качества</p>
+                    </div>
+                </div>
+
+                <div class="card service-card" onclick="toggleService(this)">
+                    
+                    <h3>Монтаж</h3>
+                    <p class="muted">Установка и запуск систем</p>
+                    <div class="service-more">
+                        <p>✔ Выезд на объект</p>
+                        <p>✔ Подключение</p>
+                        <p>✔ Проверка работы</p>
+                    </div>
+                </div>
+
+                <div class="card service-card" onclick="toggleService(this)">
+                    
+                    <h3>Пусконаладка</h3>
+                    <p class="muted">Настройка и запуск</p>
+                    <div class="service-more">
+                        <p>✔ Настройка режимов</p>
+                        <p>✔ Тестирование</p>
+                        <p>✔ Выход на параметры</p>
+                    </div>
+                </div>
+
+                <div class="card service-card" onclick="toggleService(this)">
+                    
+                    <h3>Обслуживание</h3>
+                    <p class="muted">Сервис и поддержка</p>
+                    <div class="service-more">
+                        <p>✔ Плановое ТО</p>
+                        <p>✔ Замена фильтров</p>
+                        <p>✔ Диагностика</p>
+                    </div>
+                </div>
+
+                <div class="card service-card" onclick="toggleService(this)">
+                    
+                    <h3>Модернизация</h3>
+                    <p class="muted">Обновление систем</p>
+                    <div class="service-more">
+                        <p>✔ Улучшение эффективности</p>
+                        <p>✔ Замена узлов</p>
+                        <p>✔ Апгрейд решений</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- КАК РАБОТАЕМ -->
+    <section class="section">
+        <div class="container">
+
+            <h2>Как мы работаем</h2>
+
+            <div class="grid-3" style="margin-top:30px;">
+
+                <div class="card">
+                    <h3>1. Анализ</h3>
+                    <p class="muted">Изучаем объект и требования</p>
+                </div>
+
+                <div class="card">
+                    <h3>2. Решение</h3>
+                    <p class="muted">Подбираем и проектируем систему</p>
+                </div>
+
+                <div class="card">
+                    <h3>3. Реализация</h3>
+                    <p class="muted">Производим, монтируем и запускаем</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+        <div class="container">
+
+            <div class="card" style="text-align:center; padding:40px;">
+                <h2>Нужно решение под ваш объект?</h2>
+                <p class="muted">Оставьте заявку — подберём оптимальную систему</p>
+
+                <a href="contact.html" class="btn" style="margin-top:20px;">
+                    Получить расчёт
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div>
+                <h4>ООО РУС</h4>
+                <p>Инженерные системы водоочистки и водоподготовки</p>
+            </div>
+
+            <div>
+                <h4>Разделы</h4>
+                <a href="about.html">О компании</a><br>
+
+                <a href="contact.html">Контакты</a>
+            </div>
+
+            <div>
+                <h4>Контакты</h4>
+                <p>Тел: +7 (000) 000-00-00</p>
+                <p>Email: info@rusvodo.ru</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 ООО РУС. Все права защищены
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+    <script>
+        function toggleService(el) {
+            document.querySelectorAll('.service-card').forEach(card => {
+                if (card !== el) card.classList.remove('active');
+            });
+            el.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

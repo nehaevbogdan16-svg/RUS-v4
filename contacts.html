@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — РУС</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo-wrap">
+                <img src="assets/logo.png" class="logo">
+                <span class="logo-text">РУС</span>
+            </a>
+
+            <div class="burger" onclick="toggleMenu()">☰</div>
+
+            <nav id="menu">
+                <a href="about.html">О компании</a>
+                <a href="services.html">Решения</a>
+                <a href="projects.html">Проекты</a>
+                <a href="production.html">Производство</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+
+            <!-- Заголовок -->
+            <div style="max-width:600px;">
+                <h1>Контакты</h1>
+                <p class="muted">Свяжитесь с нами удобным способом или приезжайте к нам в офис</p>
+            </div>
+
+            <!-- Контакты -->
+            <div class="grid-3" style="margin-top:40px;">
+
+                <div class="card">
+                    <p class="muted">Телефон</p>
+                    <h3>+7 (000) 000-00-00</h3>
+                </div>
+
+                <div class="card">
+                    <p class="muted">Email</p>
+                    <h3>info@rusvodo.ru</h3>
+                </div>
+
+                <div class="card">
+                    <p class="muted">Адрес</p>
+                    <h3>Я хз какой адрес</h3>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="card" style="margin-top:40px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
+                <div>
+                    <h3>Нужен расчёт или консультация?</h3>
+                    <p class="muted">Оставьте заявку — мы свяжемся с вами</p>
+                </div>
+
+                <a href="contact.html" class="btn">Оставить заявку</a>
+            </div>
+
+            <!-- Карта -->
+            <div class="map">
+                <iframe src="https://yandex.ru/map-widget/v1/?ll=37.6173%2C55.7558&z=10&l=map"
+                        width="100%"
+                        height="400"
+                        frameborder="0"
+                        style="border-radius:12px;">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div>
+                <h4>ООО РУС</h4>
+                <p>Инженерные системы водоочистки и водоподготовки</p>
+            </div>
+
+            <div>
+                <h4>Разделы</h4>
+                <a href="about.html">О компании</a><br>
+                
+                <a href="contact.html">Контакты</a>
+            </div>
+
+            <div>
+                <h4>Контакты</h4>
+                <p>Тел: +7 (000) 000-00-00</p>
+                <p>Email: info@rusvodo.ru</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 ООО РУС. Все права защищены
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

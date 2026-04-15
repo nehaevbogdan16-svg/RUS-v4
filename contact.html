@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — РУС</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container nav">
+            <a href="index.html" class="logo-wrap">
+                <img src="assets/logo.png" class="logo">
+                <span class="logo-text">РУС</span>
+            </a>
+
+            <div class="burger" onclick="toggleMenu()">☰</div>
+
+            <nav id="menu">
+                <a href="about.html">О компании</a>
+                <a href="services.html">Решения</a>
+                <a href="projects.html">Проекты</a>
+                <a href="production.html">Производство</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <a href="contact.html" class="btn">Заявка</a>
+        </div>
+    </header>
+
+
+
+    <section class="section">
+        <div class="container">
+
+            <div class="form-box">
+
+                <div class="form-head">
+                    <h2>Запросить инженерное решение</h2>
+                    <p>Опишите задачу — мы подготовим техническое предложение</p>
+                </div>
+
+                <form class="form-grid">
+
+                    <div class="input-group">
+                        <label>Имя</label>
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Телефон</label>
+                        <input type="tel" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="example@mail.ru">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Тип объекта</label>
+                        <select>
+                            <option>Промышленный объект</option>
+                            <option>Завод</option>
+                            <option>Муниципальный</option>
+                            <option>Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group full">
+                        <label>Описание задачи</label>
+                        <textarea placeholder="Опишите задачу, объём воды, требования..."></textarea>
+                    </div>
+
+                    <div class="form-bottom">
+                        <button class="btn">Отправить заявку</button>
+                        <span>Ответим в течение 1 рабочего дня</span>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+    <script src="https://unpkg.com/imask"></script>
+
+    <script>
+        const phoneInput = document.querySelector('input[type="tel"]');
+
+        const mask = IMask(phoneInput, {
+            mask: '+{7} (000) 000-00-00'
+        });
+    </script>
+    <script>
+        function toggleMenu() {
+            document.getElementById('menu').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
+<footer class="footer">
+    <div class="container footer-grid">
+
+        <div>
+            <h4>ООО РУС</h4>
+            <p>Инженерные системы водоочистки и водоподготовки</p>
+        </div>
+
+        <div>
+            <h4>Разделы</h4>
+            <a href="about.html">О компании</a><br>
+            
+            <a href="contact.html">Контакты</a>
+        </div>
+
+        <div>
+            <h4>Контакты</h4>
+            <p>Тел: +7 (000) 000-00-00</p>
+            <p>Email: info@rusvodo.ru</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 ООО РУС. Все права защищены
+    </div>
+</footer>
